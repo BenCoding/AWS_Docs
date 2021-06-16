@@ -1,0 +1,23 @@
+site_name: Ben's AWS Guide
+site_url: https://aws.bencassani.com/
+theme:
+  name: material
+  features:
+    - header.autohide
+    - search.suggest
+  plugins:
+    - search
+copyright: Copyright &copy; 2016 - 2020 Ben Cassani
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+extra:
+  version:
+    provider: mike
+repo_url: https://github.com/bencoding/AWS_Docs
+
+
+
+
+
