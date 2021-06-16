@@ -1,5 +1,11 @@
+# Site Settings
 site_name: Ben's AWS Guide
 site_url: https://aws.bencassani.com/
+# Git Hub Settings
+repo_url: https://github.com/bencoding/AWS_Docs/
+repo_name: bencoding/AWS_Docs
+edit_uri: edit/master/docs/
+# Theme Settings
 theme:
   name: material
   features:
@@ -7,15 +13,14 @@ theme:
     - search.suggest
   plugins:
     - search
+     - git-revision-date
 copyright: Copyright &copy; 2016 - 2020 Ben Cassani
 extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
-extra:
   version:
     provider: mike
-repo_url: https://github.com/bencoding/AWS_Docs
 
 
 
