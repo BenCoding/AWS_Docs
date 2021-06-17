@@ -1,6 +1,6 @@
-# Welcome to Ben's AWS Guide
+# Getting Started
 
-## Purpose - Why?
+## This guide will walk through basics of working with AWS
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.

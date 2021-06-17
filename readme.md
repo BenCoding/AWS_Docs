@@ -1,20 +1,17 @@
-# Welcome to Ben's AWS Guide
+# Setting up Domain
 
-## Purpose - Why?
+[Domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)    
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+`dig aws.bencassani.com +nostats +nocomments +nocmd`
 
-## Overview - What?
+## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
-## How to use this guide?
+## Project layout
 
     mkdocs.yml    # The configuration file.
     docs/

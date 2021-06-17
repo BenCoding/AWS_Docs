@@ -11,16 +11,113 @@ theme:
   features:
     - header.autohide
     - search.suggest
+    - navigation.instant
+    - navigation.top
+     - content.tabs.link
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
   plugins:
     - search
      - git-revision-date
 copyright: Copyright &copy; 2016 - 2020 Ben Cassani
+# Customization
 extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
-  version:
-    provider: mike
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Start: getting-started.md
+  - Compute: 
+    -  Compute Options: compute/compute-options.md
+    -  Fargate: compute/fargate.md
+    -  Lambda: compute/lambda.md
+    -  Serverless: compute/serverless.md
+  - Database:
+      - Database Options: database/options.md
+  - Storage:
+    - Storage Options: storage/options.md
+  - Monitor:
+    - Monitor Options: monitor/options.md
+  - Messaging:
+    - Messaging Options: messaging/options.md
+  - Network:
+    - Network Options: network/options.md
+  - Storage:
+    - Storage Options: storage/options.md
+  - Analytics:
+    - Analytics Options: analytics/options.md
+  - ML-AI:
+    - ML/AI Options: analytics/options.md
+  - Security:
+    - Security Options: security/options.md
+  - Cost:
+    - Cost Options: cost/costmodel.md
+  - Optimize: 
+    -  Basics: optimize/terraform.md
+
 
 
 
