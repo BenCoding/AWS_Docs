@@ -37,8 +37,6 @@
 
 Do you need Fargate in Multi-AZ?
 
-
-
 ## When Lambda is better
 
 1. Cost-sensitivity
@@ -104,7 +102,6 @@ Lambda largely operates based on **trigger events** that originate in other syst
 | VMware Cloud on AWS            |                                                                                                  | Virtual Servers |
 | AMI                            | Machine Image                                                                                    | Virtual Servers |
 | App Mesh                       |                                                                                                  |                 |
-
 
 ## How to implement
 

@@ -1,6 +1,15 @@
+# AWS Docs
+
+This project is a compilation of my learnings as a Cloud Solution Architect & Analyst
+This guide is intended to help anyone in their journey to the cloud on AWS. 
+
+---
+ 
 # Setting up Domain
 
-[Domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)    
+## Checking DNS Configuration for site
+
+[Domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 `dig aws.bencassani.com +nostats +nocomments +nocmd`
 

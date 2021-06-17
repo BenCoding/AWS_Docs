@@ -4,7 +4,6 @@ site_url: https://aws.bencassani.com/
 # Git Hub Settings
 repo_url: https://github.com/bencoding/AWS_Docs/
 repo_name: bencoding/AWS_Docs
-edit_uri: edit/master/docs/
 # Theme Settings
 theme:
   name: material
@@ -24,25 +23,20 @@ theme:
   plugins:
     - search
      - git-revision-date
-copyright: Copyright &copy; 2016 - 2020 Ben Cassani
+copyright: Copyright &copy; 2021 Ben Cassani
 # Customization
 extra:
+  generator: false
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+      link: https://github.com/bencoding
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+      link: https://twitter.com/benassani
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk/
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/squidfunk
+      link: https://linkedin.com/in/bencassani
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/tables.js
