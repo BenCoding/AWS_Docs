@@ -7,6 +7,15 @@ repo_name: bencoding/AWS_Docs
 # Theme Settings
 theme:
   name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   features:
     - header.autohide
     - search.suggest
@@ -23,6 +32,7 @@ theme:
   plugins:
     - search
      - git-revision-date
+    - tags
 copyright: Copyright &copy; 2021 Ben Cassani
 # Customization
 extra:
@@ -34,7 +44,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/bencoding
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/benassani
+      link: https://twitter.com/bencassani
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/bencassani
 extra_javascript:
@@ -82,8 +92,10 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Getting started:
+  - Architecture:
     - Start: getting-started.md
+    - Decision: architecture/decisions.md
+    - Resiliency: architecture/resilence.md
   - Compute: 
     -  Compute Options: compute/compute-options.md
     -  Fargate: compute/fargate.md

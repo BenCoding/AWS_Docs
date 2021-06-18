@@ -9,6 +9,7 @@
    2. Sporadic CPU load?
    3. How long does your processing run for?
    4. How fast do you need to scale?
+   5. Higher up the stack
 
 ## When Fargate is better
 
