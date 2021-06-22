@@ -4,6 +4,7 @@ site_url: https://aws.bencassani.com/
 # Git Hub Settings
 repo_url: https://github.com/bencoding/AWS_Docs/
 repo_name: bencoding/AWS_Docs
+# edit_uri: ""
 # Theme Settings
 theme:
   name: material
@@ -97,30 +98,31 @@ nav:
     - Decision: architecture/decisions.md
     - Resiliency: architecture/resilence.md
   - Compute: 
-    -  Compute Options: compute/compute-options.md
+    -  Options: compute/options.md
     -  Fargate: compute/fargate.md
     -  Lambda: compute/lambda.md
     -  Serverless: compute/serverless.md
+    -  Use Cases: compute/usecases.md
   - Database:
-      - Database Options: database/options.md
+      - Options: database/options.md
   - Storage:
-    - Storage Options: storage/options.md
+    - Options: storage/options.md
   - Monitor:
-    - Monitor Options: monitor/options.md
+    - Options: monitor/options.md
   - Messaging:
-    - Messaging Options: messaging/options.md
+    - Options: messaging/options.md
   - Network:
-    - Network Options: network/options.md
+    - Options: network/options.md
   - Storage:
-    - Storage Options: storage/options.md
+    - Options: storage/options.md
   - Analytics:
-    - Analytics Options: analytics/options.md
+    - Options: analytics/options.md
   - ML-AI:
-    - ML/AI Options: analytics/options.md
+    - Options: analytics/options.md
   - Security:
-    - Security Options: security/options.md
+    - Options: security/options.md
   - Cost:
-    - Cost Options: cost/costmodel.md
+    - Options: cost/costmodel.md
   - Optimize: 
     -  Basics: optimize/terraform.md
 

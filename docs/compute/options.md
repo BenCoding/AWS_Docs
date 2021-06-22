@@ -1,15 +1,48 @@
-# Compute Options
+# Options
 
+![Compute Icon](Compute_light-bg.svg){ align=left loading=lazy }
 > Compute in the cloud is about understanding, What you are processing, How frequently, and What size resources you require.
 
+---
+
+=== "ECS"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Lambda"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+=== "Serverless"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+=== "EC2"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
 ## Compute Principles
 
-1. What kind of processing are you doing?
-   1. High consistent CPU load?
-   2. Sporadic CPU load?
-   3. How long does your processing run for?
-   4. How fast do you need to scale?
-   5. Higher up the stack
+1. What kind of processing are you doing? [^1]
+2. High consistent CPU load? [^2]
+3. Sporadic CPU load? [^3]
+4. How long does your processing run for? [^4]
+5. How fast do you need to scale? [^5]
+6. Higher up the stack [^6]
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^3]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^4]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^5]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^6]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ## When Fargate is better
 
@@ -106,3 +139,4 @@ Lambda largely operates based on **trigger events** that originate in other syst
 
 ## How to implement
 
+## References
