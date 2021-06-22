@@ -28,6 +28,7 @@
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
+
 ## Compute Principles
 
 1. What kind of processing are you doing? [^1]
@@ -60,7 +61,7 @@
 | Lower Costs (Maybe) | Limited Regions Available |
 
 !!! abstract "Fargate Cost Calculator"
-    [Fargate Cost Calculator](https://www.fargate.org/) - https://www.fargate.org/
+    [Fargate Cost Calculator](https://www.fargate.org/) - <https://www.fargate.org/>
 
 !!! question "Faragate Consideration"
     *Fargate has had some issues for us when tried scaling very quickly at very large scales.
@@ -76,7 +77,6 @@ Do you need Fargate in Multi-AZ?
 1. Cost-sensitivity
 2. Spoardic workloads
 3. Processing batches takes less than 15 minutes
-
 
 !!! warning "Lambda Constraints"
     15 min per invocation for a lambda
