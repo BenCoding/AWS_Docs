@@ -4,7 +4,7 @@ site_url: https://aws.bencassani.com/
 # Git Hub Settings
 repo_url: https://github.com/bencoding/AWS_Docs/
 repo_name: bencoding/AWS_Docs
-# edit_uri: ""
+edit_uri: ""
 # Theme Settings
 theme:
   name: material
@@ -113,6 +113,8 @@ nav:
     - Options: messaging/options.md
   - Network:
     - Options: network/options.md
+    - API Patterns: network/api-gateway-patterns.md
+    - API-Gateway: network/api-gateway.md
   - Storage:
     - Options: storage/options.md
   - Analytics:

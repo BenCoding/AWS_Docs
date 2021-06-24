@@ -1,35 +1,74 @@
-# Options
+# AWS Networking
 
-![Compute Icon](Compute_light-bg.svg){ align=left  }
-> Compute in the cloud is about understanding, What you are processing, How frequently, and What size resources you require.
+![Amazon VPC](Amazon-VPC.png){ align=left}
+> Cloud networking is about setting up your joint security with AWS and your own standards.
 
 ---
 
-=== "ECS"
+### Options
 
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
+=== "Region"
 
-=== "Lambda"
+    1. **What**? Several datacenters nearby/grouped in a region in the world (US EAST, EU WEST)
+    2. **How**? Amazon independently maps zones to identifiers for each account. 
+
+        1. This means the us-east-1a availability zone for one account may not be backed by the same data centers as us-east-1a for another account.
+
+        2. Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+        rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.
+
+            1. Mauris dictum mi lacus
+            2. Ut sit amet placerat ante
+            3. Suspendisse ac eros arcu
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6kJYkBABeiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+=== "AZ "
+
+    1. **What**? One or more data centers (in a Region)
+    2. **How**? Amazon independently maps zones to identifiers for each account. 
+
+        1. This means the us-east-1a availability zone for one account may not be backed by the same data centers as us-east-1a for another account.
+
+        1. Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+        rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.
+
+            1. Mauris dictum mi lacus
+            2. Ut sit amet placerat ante
+            3. Suspendisse ac eros arcu
+
+
+=== "VPC"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
 
-=== "Serverless"
+=== "Endpoint/Gateway"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
 
-=== "EC2"
+=== "Load Balancers"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
 
-## Compute Principles
+=== "Direct Connect"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+=== "Cloudfront CDN"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+## Other Networking Options
 
 1. What kind of processing are you doing? [^1]
 2. High consistent CPU load? [^2]
@@ -138,5 +177,17 @@ Lambda largely operates based on **trigger events** that originate in other syst
 | App Mesh                       |                                                                                                  |                 |
 
 ## How to implement
+
+## Use Cases
+
+### Lambda that calls back into Corporate Datacenter
+
+> I'd like to deploy a lambda that can call back into the corporate data center <br/>
+> on port 443 through VPC (not public endpoint). <br/>
+> Is this allowed? <br/>
+> What Subnet and security group is recommend? <br/>
+> Is there any trickiness with DNS resolution of internal names?
+
+#### How To
 
 ## References

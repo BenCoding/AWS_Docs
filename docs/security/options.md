@@ -1,6 +1,6 @@
 # Options
 
-![Security Icon](Security_light-bg.svg){ align=left loading=lazy }
+![Security Icon](Security_light-bg.svg){ align=left  }
 > Security in the cloud is about understanding ...
 ---
 
