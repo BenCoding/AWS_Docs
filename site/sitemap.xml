@@ -2,77 +2,132 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aws.bencassani.com/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/getting-started/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/app-ecosystem/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/data/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/architecture/decisions/</loc>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/hardware/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/local-adaptation/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/architecture/multicloud/</loc>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/resilence/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/why-cloud/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/architecture/your-architecture/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://aws.bencassani.com/compute/compute-options/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <loc>https://aws.bencassani.com/compute/ec2/</loc>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/compute/fargate/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/compute/lambda/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/compute/options/</loc>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/compute/serverless/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/messaging/options/</loc>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/messaging/sqs/</loc>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/migration/datasync/</loc>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/migration/options/</loc>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/optimize/options/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aws.bencassani.com/org/org/</loc>
-         <lastmod>2021-06-17</lastmod>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/security/onprem/</loc>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/security/options/</loc>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/storage/options/</loc>
+         <lastmod>2021-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aws.bencassani.com/storage/s3/</loc>
+         <lastmod>2021-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
