@@ -10,6 +10,7 @@
     * Sed sagittis eleifend rutrum
     * Donec vitae suscipit est
     * Nulla tempor lobortis orci
+    * [Ec2](/docs/compute/ec2.md)
 
 === "Lambda"
 

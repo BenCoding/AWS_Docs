@@ -1,4 +1,4 @@
-# Welcome to Ben's AWS Guide
+# Welcome to the AWS Guide
 
 !!! attention "Under Development"
     Site is under active development, updated weekly.
@@ -11,14 +11,14 @@
 
 ## Overview - What?
 
-* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs new [dir-name]` - Create a new proje.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
-## How to use this guide?
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<a href="/compute/options/" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+Quick start
+</a>
+<a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
+Get Insiders
+</a>

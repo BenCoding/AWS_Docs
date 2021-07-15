@@ -37,7 +37,6 @@
             2. Ut sit amet placerat ante
             3. Suspendisse ac eros arcu
 
-
 === "VPC"
 
     1. Sed sagittis eleifend rutrum
