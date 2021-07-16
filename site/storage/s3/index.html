@@ -309,7 +309,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../network/options.md" class="md-tabs__link">
+      <a href="../../network/options/" class="md-tabs__link">
         Network
       </a>
     </li>
@@ -609,6 +609,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compute/usecases/" class="md-nav__link">
+        Use Cases
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -812,8 +824,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/options.md" class="md-nav__link">
+      <a href="../../network/options/" class="md-nav__link">
         Options
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/api-gateway-patterns/" class="md-nav__link">
+        API Patterns
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/api-gateway/" class="md-nav__link">
+        API-Gateway
       </a>
     </li>
   
@@ -1124,6 +1160,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#defaults" class="md-nav__link">
+    Defaults
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pricing" class="md-nav__link">
     Pricing
   </a>
@@ -1138,11 +1181,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#compliance" class="md-nav__link">
-    Compliance
+  <a href="#compliance-security" class="md-nav__link">
+    Compliance &amp; Security
   </a>
   
-    <nav class="md-nav" aria-label="Compliance">
+    <nav class="md-nav" aria-label="Compliance &amp; Security">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1181,9 +1224,14 @@
 <h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
 <h2 id="what">What?<a class="headerlink" href="#what" title="Permanent link">&para;</a></h2>
 <h2 id="how">How?<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
+<h2 id="defaults">Defaults<a class="headerlink" href="#defaults" title="Permanent link">&para;</a></h2>
+<ul>
+<li>S3 objects are <code>PRIVATE</code> by default</li>
+<li>They are not public to the world unless configured so</li>
+</ul>
 <h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
 <h2 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
-<h2 id="compliance">Compliance<a class="headerlink" href="#compliance" title="Permanent link">&para;</a></h2>
+<h2 id="compliance-security">Compliance &amp; Security<a class="headerlink" href="#compliance-security" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Q: Do you need to log S3 changes and access?</p>
 </blockquote>
@@ -1198,8 +1246,8 @@
 <ol>
 <li>For <strong>more detailed</strong> logging you the Server Access logging feature.</li>
 </ol>
-<p><img alt="" src="../s3properties.png" /></p>
-<p><img alt="" src="../enablelogging.png" /></p>
+<p><img alt="S3 Properties" src="../s3properties.png" /></p>
+<p><img alt="Enable Logging" src="../enablelogging.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Target Bucket</p>
 <p>for simplicity select another S3 bucket just for logging</p>

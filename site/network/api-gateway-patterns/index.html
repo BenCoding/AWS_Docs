@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://aws.bencassani.com/migration/datasync/">
+        <link rel="canonical" href="https://aws.bencassani.com/network/api-gateway-patterns/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
-        <title>Data Sync - Ben's AWS Guide</title>
+        <title>API Patterns - Ben's AWS Guide</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-sync" class="md-skip">
+        <a href="#api-gateway-patterns" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Sync
+              API Patterns
             
           </span>
         </div>
@@ -303,13 +303,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../network/options/" class="md-tabs__link">
+      <a href="../options/" class="md-tabs__link md-tabs__link--active">
         Network
       </a>
     </li>
@@ -801,12 +803,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
       
       <label class="md-nav__link" for="__nav_8">
         Network
@@ -824,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/options/" class="md-nav__link">
+      <a href="../options/" class="md-nav__link">
         Options
       </a>
     </li>
@@ -834,11 +838,65 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../network/api-gateway-patterns/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          API Patterns
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         API Patterns
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-gateway-with-fargate" class="md-nav__link">
+    API Gateway with Fargate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privateinternal-to-be-called-by-datacenter" class="md-nav__link">
+    Private/Internal to be called by Datacenter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-gateway-public-endpoint" class="md-nav__link">
+    API Gateway Public Endpoint
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -848,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/api-gateway/" class="md-nav__link">
+      <a href="../api-gateway/" class="md-nav__link">
         API-Gateway
       </a>
     </li>
@@ -1139,49 +1197,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why" class="md-nav__link">
-    Why?
+  <a href="#api-gateway-with-fargate" class="md-nav__link">
+    API Gateway with Fargate
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what" class="md-nav__link">
-    What?
+  <a href="#privateinternal-to-be-called-by-datacenter" class="md-nav__link">
+    Private/Internal to be called by Datacenter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how" class="md-nav__link">
-    How?
-  </a>
-  
-    <nav class="md-nav" aria-label="How?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-options" class="md-nav__link">
-    Implementation Options
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pricing" class="md-nav__link">
-    Pricing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    Constraints
+  <a href="#api-gateway-public-endpoint" class="md-nav__link">
+    API Gateway Public Endpoint
   </a>
   
 </li>
@@ -1199,34 +1230,17 @@
               
                 
                 
-                <h1 id="data-sync">Data Sync<a class="headerlink" href="#data-sync" title="Permanent link">&para;</a></h1>
-<h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
-<h2 id="what">What?<a class="headerlink" href="#what" title="Permanent link">&para;</a></h2>
-<h2 id="how">How?<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
-<h3 id="implementation-options">Implementation Options<a class="headerlink" href="#implementation-options" title="Permanent link">&para;</a></h3>
+                <h1 id="api-gateway-patterns">API Gateway Patterns<a class="headerlink" href="#api-gateway-patterns" title="Permanent link">&para;</a></h1>
+<p><img align="left" alt="API Gateway Icon" src="../Amazon-API-Gateway_light-bg.svg" /></p>
 <blockquote>
-<p>Q: Do you want to transfer your data privately to AWS?</p>
+<p>Different patterns of architecture for API Gateway</p>
 </blockquote>
-<ol>
-<li>Use Direct Connect for private data transfer</li>
-<li>abc</li>
-</ol>
-<blockquote>
-<p>Q: Do you want to transfer in the quickest way possible?</p>
-</blockquote>
-<ol>
-<li>Storage Gateway is meant for a fulll-time hybrid storage architecture, if you only want to transfer the data and be done with it then Data Sync is your option.</li>
-<li>abc</li>
-</ol>
-<blockquote>
-<p>Q: Do you care if you pass your data over the public internet?</p>
-</blockquote>
-<ol>
-<li>Use DataSync agent to move the data over the internet</li>
-</ol>
-<h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
-<h2 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
-<p>abc</p>
+<hr />
+<h2 id="api-gateway-with-fargate">API Gateway with Fargate<a class="headerlink" href="#api-gateway-with-fargate" title="Permanent link">&para;</a></h2>
+<p><img alt="API Fargate Pattern" src="../API-Fargate.svg" /></p>
+<p>Esse incididunt ipsum sunt veniam velit nulla. Laboris tempor ut laboris elit. Id qui dolor duis nostrud labore do quis non do cupidatat quis sunt irure ullamco. Mollit ullamco ad enim commodo. Laboris qui ad nisi amet proident consequat non sunt deserunt occaecat. Incididunt excepteur sunt dolore consequat dolore occaecat cupidatat ad aliqua nostrud in proident adipisicing.</p>
+<h2 id="privateinternal-to-be-called-by-datacenter">Private/Internal to be called by Datacenter<a class="headerlink" href="#privateinternal-to-be-called-by-datacenter" title="Permanent link">&para;</a></h2>
+<h2 id="api-gateway-public-endpoint">API Gateway Public Endpoint<a class="headerlink" href="#api-gateway-public-endpoint" title="Permanent link">&para;</a></h2>
                 
               
               
@@ -1242,6 +1256,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../options/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Options" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Options
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../api-gateway/" class="md-footer__link md-footer__link--next" aria-label="Next: API-Gateway" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              API-Gateway
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

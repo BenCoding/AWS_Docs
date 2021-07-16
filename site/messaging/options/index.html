@@ -311,7 +311,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../network/options.md" class="md-tabs__link">
+      <a href="../../network/options/" class="md-tabs__link">
         Network
       </a>
     </li>
@@ -611,6 +611,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compute/usecases/" class="md-nav__link">
+        Use Cases
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -870,8 +882,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/options.md" class="md-nav__link">
+      <a href="../../network/options/" class="md-nav__link">
         Options
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/api-gateway-patterns/" class="md-nav__link">
+        API Patterns
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/api-gateway/" class="md-nav__link">
+        API-Gateway
       </a>
     </li>
   
@@ -1217,7 +1253,7 @@
 </tr>
 <tr>
 <td>3. Kinesis Data Streams</td>
-<td>Persistence &amp; Durability</td>
+<td>Persistence &amp; Durability &amp; Scale</td>
 <td></td>
 </tr>
 <tr>
@@ -1258,7 +1294,14 @@
 </tbody>
 </table>
 <h2 id="how-to-decide">How to decide?<a class="headerlink" href="#how-to-decide" title="Permanent link">&para;</a></h2>
-<p>abc</p>
+<div class="admonition note">
+<p class="admonition-title">Kinesis Data Streams</p>
+<p>Kinesis may be a better fit instead of SQS at times due to it's
+resiliency - data won't go missing
+durable
+streams data in the sequence (SQS FIFO only recently released)
+handles high volumes</p>
+</div>
 <h2 id="architecture-patterns">Architecture Patterns<a class="headerlink" href="#architecture-patterns" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1326,7 +1369,7 @@
       
       
         
-        <a href="../../storage/options/" class="md-footer__link md-footer__link--next" aria-label="Next: Options" rel="next">
+        <a href="../../network/options/" class="md-footer__link md-footer__link--next" aria-label="Next: Options" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
